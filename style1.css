@@ -1,0 +1,234 @@
+/* Importing Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px
+}
+
+.right .left{
+    padding: 20px;
+}
+.right{
+    width: 625px;
+    height: 736px;
+    top: 700px;
+    left: 1080px;
+    padding: 10px 10px;
+    z-index: 2;
+    border: 2px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #c0c0c0;
+}
+.last-div{
+    height: 500px;
+    width: 1920px; 
+    align-items: center;
+    
+    display: flex;
+    z-index: 1;
+}
+.header {
+    height: 86px;
+    
+    display: flex;
+    align-items: center; 
+}
+.ul-div {
+    font-family:'Poppins'; 
+    font-size: 16px; 
+    font-weight: 400; 
+    width: 745px; 
+    height: 208px; 
+    margin-left: 160px;
+}
+
+/* .right-div{
+    left: 0;
+	width: 50%;
+	z-index: 1;
+}
+.left-div{
+    left: 0;
+	width: 50%;
+	z-index: 2;
+} */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border: 2px;
+  border-color: #c0c0c0;
+}
+
+.container .title {
+  
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+.content form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+form .user-details .input-box-long {
+  margin-bottom: 15px;
+  width: calc(100% );
+}
+
+form .input-box span.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    margin-bottom: 5px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box select {
+    margin-bottom: 5px;
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: #FFB800;
+}
+
+.user-details .input-box select:focus,
+.user-details .input-box select:valid {
+  border-color: #FFB800;
+}
+
+
+.user-details .input-box-long input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box-long input:focus,
+.user-details .input-box-long input:valid {
+  border-color: #FFB800;
+}
+
+form .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+form .category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 35px 0
+}
+
+form .button input{
+  height: 100%;
+  width: 25%;
+  border-radius: 5px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #FF9A00;
+}
+
+form .button input:hover {
+  background-color: #FFB800;
+}
+
+/* Responsive media query code for mobile devices */
+@media(max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .category {
+    width: 100%;
+  }
+
+  .content form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+/* Responsive media query code for mobile devices */
+@media(max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
